@@ -1,4 +1,4 @@
-//Alternative without RegEx
+//Alternative without RegEx, interesting that the greater than operator works on letters too
 
 function printerError(s) {
     let errors = 0;
