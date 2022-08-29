@@ -1,4 +1,4 @@
-// New solution using the every method
+// New solution using the every method. Could also use indexOf(letter) !== -1 like the top solution suggests
 
 function isPangram(string) {
     string = string.toLowerCase();
