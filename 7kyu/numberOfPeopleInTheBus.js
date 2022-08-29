@@ -1,4 +1,4 @@
-//First solution before I try destructuring
+// This time with destructuring
 
 var number = function (busStops) {
     return busStops.reduce((peopleInBus, [on, off]) => peopleInBus + on - off, 0)
