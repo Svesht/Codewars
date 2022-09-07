@@ -8,3 +8,14 @@ function rgb(r, g, b) {
         return hex.length > 1 ? hex : 0 + hex;
     }).join('').toUpperCase();
 }
+
+//Alternative solution using reduce and spread
+
+function rgb(r, g, b) {
+    return [...arguments].reduce((res, cur) => {
+        if (cur > 255) cur = 255;
+        if (cur < 0) cur = 0;
+        const hex = cur.toString(16).toUpperCase();
+        return res + (hex.length > 1 ? hex : 0 + hex);
+    }, '')
+}
