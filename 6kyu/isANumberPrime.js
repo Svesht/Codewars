@@ -15,12 +15,12 @@ function isPrime(num) {
     return true;
 }
 
-//Refactored to exclude the exception for the number two
+//Refactored to exclude the exception for the number two, and cleaned up the divisor check 
 
 function isPrime(num) {
     if (num < 2) return false;
     for (i = 2; i <= Math.sqrt(num); i++) {
-        if ((num / i) % 1 === 0) return false;
+        if (num % i === 0) return false;
     }
     return true;
 }
@@ -31,7 +31,7 @@ function isPrime(num) {
     if (num < 2) return false;
     const squareRoot = Math.sqrt(num);
     for (i = 2; i <= squareRoot; i++) {
-        if ((num / i) % 1 === 0) return false;
+        if (num % i === 0) return false;
     }
     return true;
 }
