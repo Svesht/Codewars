@@ -19,3 +19,13 @@ function rgb(r, g, b) {
         return res + (hex.length > 1 ? hex : 0 + hex);
     }, '')
 }
+
+//Alternative solution using slice
+
+const rgb = (r, g, b) => toHex(r) + toHex(g) + toHex(b);
+
+function toHex(d) {
+    if (d >= 255) return 'FF';
+    if (d <= 0) return '00';
+    return ('0' + d.toString(16)).slice(-2).toUpperCase();
+}
