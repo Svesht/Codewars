@@ -7,3 +7,19 @@ const reverseSeq = n => {
     }
     return res;
 };
+
+//Shorter but not good practice
+
+const reverseSeq2 = n => {
+    return [...Array(n)].map(_ => n--)
+};
+
+//Better practice 
+
+const reverseSeq3 = n => {
+    return [...Array(n)].map((_, i) => n - i)
+};
+
+//One line
+
+const reverseSeq4 = n => [...Array(n)].map((_, i) => n - i);
