@@ -1,6 +1,10 @@
 //Original solution
 
-const solution = (string) => string.split(/(?=[A-Z])/).join(" ");
+const solution = string => string.split(/(?=[A-Z])/).join(" ");
+
+//Alternate solution
+
+const solution = string => string.replace(/([A-Z])/, " $1");
 
 //Without regex
 
