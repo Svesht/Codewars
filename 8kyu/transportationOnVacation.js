@@ -1,3 +1,14 @@
+//Original solution
+
+function rentalCarCost(d) {
+    const baseCost = 40 * d
+    if (d > 6) return 40 * d - 50;
+    if (d > 2) return 40 * d - 20;
+    return 40 * d;
+}
+
+//Refactored
+
 function rentalCarCost(d) {
     const baseCost = 40 * d
     if (d > 6) return baseCost - 50;
