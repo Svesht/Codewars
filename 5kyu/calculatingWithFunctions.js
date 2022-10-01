@@ -1,3 +1,13 @@
+//Better solution
+
+['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    .forEach((number, index) => this[number] = input => input ? input(index) : index);
+
+function plus(right) {return left => left + right;}
+function minus(right) {return left => left - right;}
+function times(right) {return left => left * right;}
+function dividedBy(right) {return left => Math.floor(left / right);}
+
 //Terrible first solution
 
 function zero(op) {
