@@ -10,7 +10,11 @@ const rps = (p1, p2) => {
     return "Draw!";
 };
 
+//New solution
+
 function rps (p1, p2) {
     const foil = {rock: 'paper', paper: 'scissors', scissors: 'rock'}
     if (p1 === p2) return "Draw!";
+    if (p1 === foil[p2]) return "Player 1 won!";
+    else return "Player 2 won!"
 };
