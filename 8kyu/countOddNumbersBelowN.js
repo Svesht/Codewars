@@ -4,4 +4,4 @@
 
 //Refactored (haha)
 
-const oddCount = (n) => Math.floor(n / 2);
+const oddCount = n => Math.floor(n / 2);
