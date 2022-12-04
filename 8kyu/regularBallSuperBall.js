@@ -5,3 +5,9 @@ var Ball = function(ballType) {
         this.ballType = 'regular';
     }
 };
+
+//Refactored
+
+var Ball = function(ballType) {
+    this.ballType = ballType || 'regular';
+};
