@@ -1,0 +1,1 @@
+const noOdds = arr => arr.filter(num => num % 2 === 0);
