@@ -1,0 +1,1 @@
+const reverseLetter = str => str.replace(/[^A-Za-z]/g, '').split('').reverse().join('');
